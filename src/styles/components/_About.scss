@@ -1,0 +1,135 @@
+.about-container {
+}
+
+.welcome-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #bae9fa;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    margin-right: 150px;
+}
+
+.welcome-text-container {
+    line-height: 50px;
+}
+
+.onboard-text {
+}
+
+.developter-text {
+}
+
+.myinfo-container {
+    display: flex;
+    padding: 20px;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+}
+
+.profile-name {
+    margin-bottom: 5px;
+}
+.profile-bar {
+    width: 330px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.profile-info-email-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.fa-envelope {
+}
+
+.profile-email-title {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.profile-email-text {
+}
+
+.profile-info-mobile-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.fa-mobile-alt {
+    width: 28px;
+}
+
+.profile-mobile-title {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.profile-mobile-text {
+}
+
+.profile-info-github-container {
+    display: flex;
+}
+
+.fa-github {
+}
+
+.profile-github-title {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.profile-github-text {
+}
+
+.myinfo-resume-container {
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.resume-download-button {
+    width: 230px;
+    height: 60px;
+    font-size: 24px;
+    color: white;
+    background-color: #548cff;
+    border: none;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: #bae9fa;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        box-shadow: gray 6px 6px 6px;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        transition: ease all;
+    }
+    &:hover:before,
+    &:hover:after {
+        width: 100%;
+        transition: ease all;
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+}

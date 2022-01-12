@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "tway_air";
+  src: url("../fonts/tway_air.ttf") format("truetype"), url("../fonts/tway_air.woff") format("woff"), url("../fonts/tway_air.woff2") format("woff2");
+}
+
+body {
+  font-family: "tway_air";
+}
+/*# sourceMappingURL=index.css.map */
