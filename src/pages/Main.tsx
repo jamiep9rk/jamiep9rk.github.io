@@ -1,15 +1,17 @@
 import React from "react";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Projects from "../components/Projects";
+import Mealtomeal from "../components/Mealtomeal";
+import Maplody from "../components/Maplody";
 import Contact from "../components/Contact";
 
 function Main() {
     return (
-        <div className="Main">
+        <div className="main">
             <About />
             <Skills />
-            <Projects />
+            <Mealtomeal />
+            <Maplody />
             <Contact />
         </div>
     );

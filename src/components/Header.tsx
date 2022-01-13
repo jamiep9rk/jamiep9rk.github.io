@@ -4,12 +4,20 @@ import { Link } from "react-scroll";
 function Header() {
     return (
         <header className="header-container">
-            <nav className="home-button">HOME</nav>
+            <nav className="home-button">@jamiep9rk</nav>
             <div className="home-navigation-container">
-                <nav className="navigation-about">ABOUT</nav>
-                <nav className="navigation-skills">SKILLS</nav>
-                <nav className="navigation-projects">PROJECTS</nav>
-                <nav className="navigation-contact">CONTACT</nav>
+                <Link to="about-container" spy={true} smooth={true}>
+                    <nav className="navigation-about">ABOUT</nav>
+                </Link>
+                <Link to="skills-container" spy={true} smooth={true}>
+                    <nav className="navigation-skills">SKILLS</nav>
+                </Link>
+                <Link to="projects-container" spy={true} smooth={true}>
+                    <nav className="navigation-projects">PROJECTS</nav>
+                </Link>
+                <Link to="contact-container" spy={true} smooth={true}>
+                    <nav className="navigation-contact">CONTACT</nav>
+                </Link>
             </div>
         </header>
     );
