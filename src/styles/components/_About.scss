@@ -5,11 +5,12 @@
     display: flex;
     width: 100%;
     height: 550px;
-    background-color: #369acb;
+    background-color: #94daff;
+    // B5DEFF
     font-size: 35px;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
 }
 
 .profile-image {
@@ -75,10 +76,11 @@
 
 .fa-mobile-alt {
     width: 28px;
+    margin-left: 5px;
 }
 
 .profile-mobile-title {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 50px;
 }
 

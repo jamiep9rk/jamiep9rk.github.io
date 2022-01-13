@@ -20,6 +20,13 @@ function Maplody() {
                         <ul>프로젝트 기획 및 진행 상황 관리, 팀원들 간 소통 관리</ul>
                         <ul>Youtube API를 이용해 검색을 통한 유튜브 비디오 불러오기 구현</ul>
                         <ul>Google Maps API를 이용한 지도 및 인포 윈도우, 마커 좌표 구현</ul>
+                        <div className="project-stack-container">
+                            <nav className="stack-box">#React</nav>
+                            <nav className="stack-box">#Javascript</nav>
+                            <nav className="stack-box">#styled-component</nav>
+                            <nav className="stack-box">#Youtube API</nav>
+                            <nav className="stack-box">#Google Maps API</nav>
+                        </div>
                     </div>
                 </nav>
             </nav>

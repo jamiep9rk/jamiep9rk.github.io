@@ -24,6 +24,14 @@ function Mealtomeal() {
                         <ul>Google Maps API를 이용한 지도 및 인포 윈도우, 검색창 구현</ul>
                         <ul>S3를 활용한 이미지 업로드 구현</ul>
                         <ul>카카오 로그인 API를 이용한 토큰 기반 소셜 로그인 구현</ul>
+                        <div className="project-stack-container">
+                            <nav className="stack-box">#React S3</nav>
+                            <nav className="stack-box">#Sass</nav>
+                            <nav className="stack-box">#Javascript</nav>
+                            <nav className="stack-box">#React</nav>
+                            <nav className="stack-box">#Kakao Login API</nav>
+                            <nav className="stack-box">#Google Maps API</nav>
+                        </div>
                     </div>
                 </nav>
             </nav>

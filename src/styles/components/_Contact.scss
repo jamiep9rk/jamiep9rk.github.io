@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
     height: 350px;
 }
 
@@ -13,28 +12,18 @@
 }
 
 .contact-navigation-container {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 40px;
 }
 
-.contact-email-container {
-    display: flex;
+.fa-envelope {
 }
 
 .navigation-email {
 }
 
-.contact-number-container {
-    display: flex;
+.fa-mobile-alt {
 }
 
 .navigation-number {
-}
-
-.contact-github-container {
-    display: flex;
-}
-
-.contact-resume-container {
-    display: flex;
 }
