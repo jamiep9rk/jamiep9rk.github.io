@@ -1,37 +1,7 @@
 .about-container {
-}
-
-.welcome-container {
-    display: flex;
-    width: 100%;
-    height: 550px;
-    background-color: #94daff;
-    // B5DEFF
-    font-size: 35px;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
-.profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 70%;
-    margin-top: 30px;
-    margin-right: 150px;
-}
-
-.welcome-text-container {
-    line-height: 50px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.onboard-text {
-    margin-bottom: 25px;
-}
-
-.developter-text {
+    background-color: #369acb;
+    padding: 60px;
+    font-size: 28px;
 }
 
 .myinfo-container {
@@ -104,7 +74,7 @@
 
 .myinfo-resume-container {
     margin-top: 20px;
-    margin-left: 500px;
+    margin-left: 100px;
 }
 
 .resume-download-button {
@@ -117,7 +87,7 @@
     border-radius: 15px;
 
     &:hover {
-        background-color: #bae9fa;
+        background-color: #94daff;
         color: black;
         font-size: 25px;
         font-weight: bold;
@@ -140,4 +110,12 @@
     &:active {
         box-shadow: none;
     }
+}
+
+.myinfo-description-container {
+    margin-top: 70px;
+    margin-left: 150px;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #369acb;
 }

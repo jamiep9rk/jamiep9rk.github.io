@@ -20,78 +20,96 @@ function Skills() {
         <div className="skills-container">
             <nav className="skills-title">Skills</nav>
             <hr className="skills-bar" />
-            <nav className="skills-box-container">
-                <div className="skills-language-title">Language</div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={javascript} alt="" />
-                    <nav className="stack-text">Javascript</nav>
+            <nav className="skills-language-container">
+                <div className="skills-title-container">
+                    <div className="skills-language-title">Language</div>
                 </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={css} alt="" />
-                    <nav className="stack-text">CSS</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={html} alt="" />
-                    <nav className="stack-text">HTML</nav>
-                </div>
+                <nav className="skills-box-container">
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={javascript} alt="" />
+                        <nav className="stack-text">Javascript</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={css} alt="" />
+                        <nav className="stack-text">CSS</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={html} alt="" />
+                        <nav className="stack-text">HTML</nav>
+                    </div>
+                </nav>
             </nav>
-            <nav className="skills-box-container">
-                <div className="skills-language-title">Framework & Library</div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={nodejs} alt="" />
-                    <nav className="stack-text">Node.js</nav>
+            <nav className="skills-language-container">
+                <div className="skills-title-container">
+                    <div className="skills-language-title">Framework & Library</div>
                 </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={express} alt="" />
-                    <nav className="stack-text">Express</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={react} alt="" />
-                    <nav className="stack-text">React</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={sass} alt="" />
-                    <nav className="stack-text">Sass(SCSS)</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={styledcomponent} alt="" />
-                    <nav className="stack-text">styled-component</nav>
-                </div>
+                <nav className="skills-box-container">
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={nodejs} alt="" />
+                        <nav className="stack-text">Node.js</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={express} alt="" />
+                        <nav className="stack-text">Express</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={react} alt="" />
+                        <nav className="stack-text">React</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={sass} alt="" />
+                        <nav className="stack-text">Sass(SCSS)</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={styledcomponent} alt="" />
+                        <nav className="stack-text">styled-component</nav>
+                    </div>
+                </nav>
             </nav>
-            <nav className="skills-box-container">
-                <div className="skills-language-title">Database</div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={mysql} alt="" />
-                    <nav className="stack-text">MySQL</nav>
+            <nav className="skills-language-container">
+                <div className="skills-title-container">
+                    <div className="skills-language-title">Database</div>
                 </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={aws} alt="" />
-                    <nav className="stack-text">AWS</nav>
-                </div>
+                <nav className="skills-box-container">
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={mysql} alt="" />
+                        <nav className="stack-text">MySQL</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={aws} alt="" />
+                        <nav className="stack-text">AWS</nav>
+                    </div>
+                </nav>
             </nav>
-            <nav className="skills-box-container">
-                <div className="skills-language-title">Tools</div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={git} alt="" />
-                    <nav className="stack-text">Git</nav>
+            <nav className="skills-language-container">
+                <div className="skills-title-container">
+                    <div className="skills-language-title">Tools</div>
                 </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={notion} alt="" />
-                    <nav className="stack-text">Notion</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={github} alt="" />
-                    <nav className="stack-text">Github</nav>
-                </div>
-                <div className="skills-language-title">Learning</div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={typescript} alt="" />
-                    <nav className="stack-text">Typescript</nav>
-                </div>
-                <div className="skills-stack-container">
-                    <img className="stack-image" src={vue} alt="" />
-                    <nav className="stack-text">Vue</nav>
-                </div>
+                <nav className="skills-box-container">
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={git} alt="" />
+                        <nav className="stack-text">Git</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={notion} alt="" />
+                        <nav className="stack-text">Notion</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={github} alt="" />
+                        <nav className="stack-text">Github</nav>
+                    </div>
+                    <div className="skills-title-container">
+                        <div className="skills-language-title">Learning</div>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={typescript} alt="" />
+                        <nav className="stack-text">Typescript</nav>
+                    </div>
+                    <div className="skills-stack-container">
+                        <img className="stack-image" src={vue} alt="" />
+                        <nav className="stack-text">Vue</nav>
+                    </div>
+                </nav>
             </nav>
         </div>
     );

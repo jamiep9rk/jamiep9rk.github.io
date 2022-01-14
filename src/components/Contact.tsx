@@ -12,7 +12,9 @@ function Contact() {
                 <a className="navigation-github" href="https://github.com/jamiep9rk" target="_blank">
                     Github 방문하기
                 </a>
-                <div className="navigation-resume">이력서 다운로드</div>
+                <a className="navigation-resume" href="https://terrific-cerise-671.notion.site/Park-Jeong-Hyun-5053e6758e2048b8849306074a728be9" target="_blank">
+                    이력서 보러가기
+                </a>
             </div>
         </div>
     );
