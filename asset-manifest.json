@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da482715.css",
+    "main.js": "/static/js/main.0f007f41.js",
+    "static/js/787.e3632d2d.chunk.js": "/static/js/787.e3632d2d.chunk.js",
+    "static/media/maplody-landing.png": "/static/media/maplody-landing.b08c1fdcfdc76ec56968.png",
+    "static/media/profile.jpg": "/static/media/profile.31adf6d626f12b040402.jpg",
+    "static/media/styledcomponent-icon.png": "/static/media/styledcomponent-icon.0fefccb0a398bba44766.png",
+    "static/media/mysql-icon.png": "/static/media/mysql-icon.c10b5bc47b47f99e1ff1.png",
+    "static/media/meal-to-meal-landing.png": "/static/media/meal-to-meal-landing.02c56f8db32cfc4baa1c.png",
+    "static/media/express-icon.png": "/static/media/express-icon.915b89629a5fefdb6ca0.png",
+    "static/media/sass-icon.png": "/static/media/sass-icon.91714f748188b46f4e33.png",
+    "static/media/react-icon.png": "/static/media/react-icon.86c8d9eba03e29814d2a.png",
+    "static/media/nodejs-icon.png": "/static/media/nodejs-icon.007e99f68b718e476aba.png",
+    "static/media/aws-icon.jpeg": "/static/media/aws-icon.1702b9adf156784d9efb.jpeg",
+    "static/media/css-icon.png": "/static/media/css-icon.02d225c7df0b28341d8d.png",
+    "static/media/git-icon.png": "/static/media/git-icon.fd1a85d6be07fd88fb05.png",
+    "static/media/typescript-icon.png": "/static/media/typescript-icon.8e08c2165d60d7ca62a9.png",
+    "static/media/html-icon.png": "/static/media/html-icon.cfb2ba4a6b1c3de295bc.png",
+    "static/media/NotoSansKR-Regular.woff2": "/static/media/NotoSansKR-Regular.0989da81ae1464db5494.woff2",
+    "static/media/NotoSansKR-Medium.woff2": "/static/media/NotoSansKR-Medium.0ee67cc0e8c61acab278.woff2",
+    "static/media/NotoSansKR-Bold.woff2": "/static/media/NotoSansKR-Bold.1313dc4224e0c40fdd09.woff2",
+    "static/media/NotoSansKR-Regular.ttf": "/static/media/NotoSansKR-Regular.43b0e4d8396faaa39f73.ttf",
+    "static/media/NotoSansKR-Medium.ttf": "/static/media/NotoSansKR-Medium.0058b601bb2021af8578.ttf",
+    "static/media/NotoSansKR-Bold.ttf": "/static/media/NotoSansKR-Bold.5a7efd23010e00044c7b.ttf",
+    "static/media/NotoSansKR-Medium.woff": "/static/media/NotoSansKR-Medium.a4a1fd6b0c581748ebbb.woff",
+    "static/media/NotoSansKR-Regular.woff": "/static/media/NotoSansKR-Regular.7801b7c8cb3d829142b1.woff",
+    "static/media/NotoSansKR-Bold.woff": "/static/media/NotoSansKR-Bold.a11008dcdd3e7915c7a8.woff",
+    "index.html": "/index.html",
+    "main.da482715.css.map": "/static/css/main.da482715.css.map",
+    "main.0f007f41.js.map": "/static/js/main.0f007f41.js.map",
+    "787.e3632d2d.chunk.js.map": "/static/js/787.e3632d2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da482715.css",
+    "static/js/main.0f007f41.js"
+  ]
+}
