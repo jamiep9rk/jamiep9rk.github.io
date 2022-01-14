@@ -3,7 +3,7 @@ import profileImg from "../img/profile.jpg";
 
 function Landing() {
     return (
-        <div>
+        <div className="landing-container">
             <nav className="welcome-container">
                 <img className="profile-image" src={profileImg} alt="" />
                 <div className="welcome-text-container">

@@ -4,7 +4,9 @@ import { Link } from "react-scroll";
 function Header() {
     return (
         <header className="header-container">
-            <nav className="home-button">@jamiep9rk</nav>
+            <Link to="landing-container" spy={true} smooth={true}>
+                <nav className="home-button">@jamiep9rk</nav>
+            </Link>
             <div className="home-navigation-container">
                 <Link to="about-container" spy={true} smooth={true}>
                     <nav className="navigation-about">ABOUT</nav>
