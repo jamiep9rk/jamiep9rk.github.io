@@ -331,6 +331,7 @@
   width: 500px;
   height: 300px;
   border: 2px solid #369acb;
+  margin-bottom: 50px;
 }
 
 .project-details-container {
@@ -358,6 +359,31 @@
   margin-right: 10px;
 }
 
+.project-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.project-home-icon {
+  width: 35px;
+  margin-right: 70px;
+}
+
+.project-github-icon {
+  width: 35px;
+  margin-right: 70px;
+}
+
+.project-retrospect-icon {
+  width: 35px;
+  height: 35px;
+}
+
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,5 +406,32 @@
 .contact-navigation-container {
   font-size: 25px;
   line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none !important;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

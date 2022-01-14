@@ -53,6 +53,7 @@
     width: 500px;
     height: 300px;
     border: 2px solid #369acb;
+    margin-bottom: 50px;
 }
 
 .project-details-container {
@@ -76,4 +77,25 @@
     border-radius: 15px;
     padding: 3px;
     margin-right: 10px;
+}
+
+.project-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-home-icon {
+    width: 35px;
+    margin-right: 70px;
+}
+
+.project-github-icon {
+    width: 35px;
+    margin-right: 70px;
+}
+
+.project-retrospect-icon {
+    width: 35px;
+    height: 35px;
 }

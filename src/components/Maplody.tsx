@@ -1,5 +1,8 @@
 import React from "react";
 import maplody from "../img/maplody-landing.png";
+import homeIcon from "../img/skills/home-icon.png";
+import githubIcon from "../img/skills/github-icon.png";
+import diaryIcon from "../img/skills/diary-icon.png";
 
 function Maplody() {
     return (
@@ -20,13 +23,24 @@ function Maplody() {
                         <ul>프로젝트 기획 및 진행 상황 관리, 팀원들 간 소통 관리</ul>
                         <ul>Youtube API를 이용해 검색을 통한 유튜브 비디오 불러오기 구현</ul>
                         <ul>Google Maps API를 이용한 지도 및 인포 윈도우, 마커 좌표 구현</ul>
-                        <div className="project-stack-container">
-                            <nav className="stack-box">#React</nav>
-                            <nav className="stack-box">#Javascript</nav>
-                            <nav className="stack-box">#styled-component</nav>
-                            <nav className="stack-box">#Youtube API</nav>
-                            <nav className="stack-box">#Google Maps API</nav>
-                        </div>
+                        <nav className="project-stack-container">
+                            <div className="stack-box">#React</div>
+                            <div className="stack-box">#Javascript</div>
+                            <div className="stack-box">#styled-component</div>
+                            <div className="stack-box">#Youtube API</div>
+                            <div className="stack-box">#Google Maps API</div>
+                        </nav>
+                        <nav className="project-link-container">
+                            <a href="https://maplody.site" target="_blank">
+                                <img className="project-home-icon" src={homeIcon} alt="홈페이지 바로가기" />
+                            </a>
+                            <a href="https://github.com/codestates/Maplody" target="_blank">
+                                <img className="project-github-icon" src={githubIcon} alt="깃헙 바로가기" />
+                            </a>
+                            <a href="https://github.com/codestates/Maplody/projects/1#column-17308479" target="_blank">
+                                <img className="project-retrospect-icon" src={diaryIcon} alt="회고 바로가기" />
+                            </a>
+                        </nav>
                     </div>
                 </nav>
             </nav>
