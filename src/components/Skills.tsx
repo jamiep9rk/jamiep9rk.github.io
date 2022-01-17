@@ -98,9 +98,13 @@ function Skills() {
                         <img className="stack-image" src={github} alt="" />
                         <nav className="stack-text">Github</nav>
                     </div>
-                    <div className="skills-title-container">
-                        <div className="skills-language-title">Learning</div>
-                    </div>
+                </nav>
+            </nav>
+            <nav className="skills-language-container">
+                <div className="skills-title-container">
+                    <div className="skills-language-title">Learning</div>
+                </div>
+                <nav className="skills-box-container">
                     <div className="skills-stack-container">
                         <img className="stack-image" src={typescript} alt="" />
                         <nav className="stack-text">Typescript</nav>
