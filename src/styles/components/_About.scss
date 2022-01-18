@@ -1,7 +1,9 @@
 .about-container {
     background-color: #369acb;
     padding: 60px;
+    height: 880px;
     font-size: 28px;
+    color: white;
 }
 
 .myinfo-container {
@@ -11,6 +13,17 @@
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 90px;
+}
+
+.myinfo-text-container {
+    margin-left: 100px;
+}
+
+.myinfo-profile-image {
+    width: 350px;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-bottom: 20px;
 }
 
 .profile-name {
@@ -72,6 +85,21 @@
 .profile-github-text {
 }
 
+.about-divide-bar {
+    border: 0.1px solid white;
+    height: 780px;
+    margin-left: 130px;
+}
+
+.myinfo-description-container {
+    margin-top: 80px;
+    margin-left: 250px;
+    font-size: 25px;
+    line-height: 50px;
+    background-color: #369acb;
+    color: white;
+}
+
 .myinfo-resume-container {
     margin-top: 20px;
     margin-left: 100px;
@@ -83,7 +111,8 @@
     font-size: 24px;
     color: white;
     background-color: #548cff;
-    border: none;
+    border: 2px solid white;
+    margin-top: 80px;
     border-radius: 15px;
 
     &:hover {
@@ -110,12 +139,4 @@
     &:active {
         box-shadow: none;
     }
-}
-
-.myinfo-description-container {
-    margin-top: 70px;
-    margin-left: 150px;
-    font-size: 20px;
-    line-height: 30px;
-    background-color: #369acb;
 }

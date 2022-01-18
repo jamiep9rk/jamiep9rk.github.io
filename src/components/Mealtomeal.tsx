@@ -3,6 +3,29 @@ import mealtomeal from "../img/meal-to-meal-landing.png";
 import homeIcon from "../img/skills/home-icon.png";
 import githubIcon from "../img/skills/github-icon.png";
 import diaryIcon from "../img/skills/diary-icon.png";
+import login from "../img/projects/Login.gif";
+import phone from "../img/projects/PhoneVerification.gif";
+import reviewUpload from "../img/projects/ReviewUpload.gif";
+import searchBar from "../img/projects/SearchBar.gif";
+import signup from "../img/projects/SignUp.gif";
+import storeInfo from "../img/projects/StoreInfo.gif";
+import Swiper, { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper(".swiper", {
+    direction: "vertical",
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 function Mealtomeal() {
     return (
@@ -14,7 +37,32 @@ function Mealtomeal() {
                 <div className="project-team">Front-end 2명 / Back-end 2명</div>
                 <div className="projects-term">2021.11 - 2021.12 (4주)</div>
                 <nav className="project-info-container">
-                    <img className="project-landing-image" src={mealtomeal} alt="" />
+                    <div className="swiper">
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                                <img src={login} alt="" />
+                            </div>
+                            <div className="swiper-slide">
+                                <img src={phone} alt="" />
+                            </div>
+                            <div className="swiper-slide">
+                                <img src={reviewUpload} alt="" />
+                            </div>
+                            <div className="swiper-slide">
+                                <img src={searchBar} alt="" />
+                            </div>
+                            <div className="swiper-slide">
+                                <img src={signup} alt="" />
+                            </div>
+                            <div className="swiper-slide">
+                                <img src={storeInfo} alt="" />
+                            </div>
+                        </div>
+                        <div className="swiper-pagination"></div>
+                        <div className="swiper-button-prev"></div>
+                        <div className="swiper-button-next"></div>
+                    </div>
+                    {/* <img className="project-landing-image" src={mealtomeal} alt="" /> */}
                     <div className="project-details-container">
                         <nav className="details-title">🍔 내가 먹은 맛있는 한 끼를 다른 사람에게 기부할 수 있는 플랫폼 입니다</nav>
                         <ul>누군가가 한 끼를 먹을 수 있도록 기부할 수 있어요</ul>
