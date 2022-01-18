@@ -17,9 +17,9 @@ function Header() {
                 <Link to="projects-container" spy={true} smooth={true}>
                     <nav className="navigation-projects">PROJECTS</nav>
                 </Link>
-                <Link to="contact-container" spy={true} smooth={true}>
+                {/* <Link to="contact-container" spy={true} smooth={true}>
                     <nav className="navigation-contact">CONTACT</nav>
-                </Link>
+                </Link> */}
             </div>
         </header>
     );

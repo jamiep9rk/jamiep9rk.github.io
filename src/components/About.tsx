@@ -22,7 +22,9 @@ function About() {
                     <div className="profile-info-github-container">
                         <i className="fab fa-github" />
                         <nav className="profile-github-title">Github</nav>
-                        <nav className="profile-github-text">https://github.com/jamiep9rk</nav>
+                        <a href="https://github.com/jamiep9rk" target="_blank">
+                            <button className="github-link-button">이동하기</button>
+                        </a>
                     </div>
                 </nav>
                 <div className="about-divide-bar" />

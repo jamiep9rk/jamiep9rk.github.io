@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
     return (
         <div className="contact-container">
-            <nav className="contact-title">CONTACT</nav>
+            {/* <nav className="contact-title">CONTACT</nav>
             <div className="contact-navigation-container">
                 <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
                     메일 보내기
@@ -15,7 +15,7 @@ function Contact() {
                 <a className="navigation-resume" href="https://terrific-cerise-671.notion.site/Park-Jeong-Hyun-5053e6758e2048b8849306074a728be9" target="_blank">
                     이력서 보러가기
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
