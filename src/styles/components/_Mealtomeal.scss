@@ -91,21 +91,29 @@
 
 .project-link-container {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
 }
 
 .project-home-icon {
     width: 35px;
-    margin-right: 70px;
 }
 
 .project-github-icon {
     width: 35px;
-    margin-right: 70px;
 }
 
 .project-retrospect-icon {
     width: 35px;
     height: 35px;
+}
+
+.project-link-text {
+    margin-left: 10px;
 }

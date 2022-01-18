@@ -31,14 +31,17 @@ function Maplody() {
                             <div className="stack-box">#Google Maps API</div>
                         </nav>
                         <nav className="project-link-container">
-                            <a href="https://maplody.site" target="_blank">
+                            <a className="project-link" href="https://maplody.site" target="_blank">
                                 <img className="project-home-icon" src={homeIcon} alt="홈페이지 바로가기" />
+                                <div className="project-link-text">홈페이지</div>
                             </a>
-                            <a href="https://github.com/codestates/Maplody" target="_blank">
+                            <a className="project-link" href="https://github.com/codestates/Maplody" target="_blank">
                                 <img className="project-github-icon" src={githubIcon} alt="깃헙 바로가기" />
+                                <div className="project-link-text">깃헙 레포</div>
                             </a>
-                            <a href="https://github.com/codestates/Maplody/projects/1#column-17308479" target="_blank">
+                            <a className="project-link" href="https://github.com/codestates/Maplody/projects/1#column-17308479" target="_blank">
                                 <img className="project-retrospect-icon" src={diaryIcon} alt="회고 바로가기" />
+                                <div className="project-link-text">작업 회고일지</div>
                             </a>
                         </nav>
                     </div>
