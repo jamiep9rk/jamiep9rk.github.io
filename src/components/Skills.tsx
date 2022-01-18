@@ -20,7 +20,7 @@ function Skills() {
         <div className="skills-container">
             <nav className="skills-title">Skills</nav>
             <hr className="skills-bar" />
-            <nav className="skills-language-container">
+            <nav className="skills-type-container">
                 <div className="skills-title-container">
                     <div className="skills-language-title">Language</div>
                 </div>
@@ -39,7 +39,7 @@ function Skills() {
                     </div>
                 </nav>
             </nav>
-            <nav className="skills-language-container">
+            <nav className="skills-type-container">
                 <div className="skills-title-container">
                     <div className="skills-language-title">Framework & Library</div>
                 </div>
@@ -66,7 +66,7 @@ function Skills() {
                     </div>
                 </nav>
             </nav>
-            <nav className="skills-language-container">
+            <nav className="skills-type-container">
                 <div className="skills-title-container">
                     <div className="skills-language-title">Database</div>
                 </div>
@@ -81,7 +81,7 @@ function Skills() {
                     </div>
                 </nav>
             </nav>
-            <nav className="skills-language-container">
+            <nav className="skills-type-container">
                 <div className="skills-title-container">
                     <div className="skills-language-title">Tools</div>
                 </div>
@@ -100,7 +100,7 @@ function Skills() {
                     </div>
                 </nav>
             </nav>
-            <nav className="skills-language-container">
+            <nav className="skills-type-container">
                 <div className="skills-title-container">
                     <div className="skills-language-title">Learning</div>
                 </div>

@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer-container">
             <nav className="footer-title">@ 2022 Front-end developer, Jamie Park's portfolio</nav>
             <i className="far fa-hand-point-right" />
-            <Link to="about-container" spy={true} smooth={true}>
+            <Link className="footer-contact-link" to="about-container" spy={true} smooth={true}>
                 <div className="footer-contact">Contact</div>
             </Link>
         </footer>

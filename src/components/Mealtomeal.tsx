@@ -9,25 +9,18 @@ import reviewUpload from "../img/projects/ReviewUpload.gif";
 import searchBar from "../img/projects/SearchBar.gif";
 import signup from "../img/projects/SignUp.gif";
 import storeInfo from "../img/projects/StoreInfo.gif";
-import Swiper, { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper(".swiper", {
-    direction: "vertical",
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Mealtomeal() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
     return (
         <div className="projects-container">
             <nav className="projects-title">Projects</nav>
@@ -37,30 +30,20 @@ function Mealtomeal() {
                 <div className="project-team">Front-end 2명 / Back-end 2명</div>
                 <div className="projects-term">2021.11 - 2021.12 (4주)</div>
                 <nav className="project-info-container">
-                    <div className="swiper">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <img src={login} alt="" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src={phone} alt="" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src={reviewUpload} alt="" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src={searchBar} alt="" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src={signup} alt="" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src={storeInfo} alt="" />
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div>
-                        <div className="swiper-button-prev"></div>
-                        <div className="swiper-button-next"></div>
+                    <div className="page-carousel">
+                        <Slider {...settings}>
+                            <img src={login} alt="" />
+
+                            <img src={phone} alt="" />
+
+                            <img src={reviewUpload} alt="" />
+
+                            <img src={searchBar} alt="" />
+
+                            <img src={signup} alt="" />
+
+                            <img src={storeInfo} alt="" />
+                        </Slider>
                     </div>
                     {/* <img className="project-landing-image" src={mealtomeal} alt="" /> */}
                     <div className="project-details-container">

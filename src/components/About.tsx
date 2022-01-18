@@ -12,7 +12,9 @@ function About() {
                     <div className="profile-info-email-container">
                         <i className="far fa-envelope" />
                         <nav className="profile-email-title">E-mail</nav>
-                        <nav className="profile-email-text">jamiecareer96@gmail.com</nav>
+                        <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
+                            <nav className="profile-email-text">jamiecareer96@gmail.com</nav>
+                        </a>
                     </div>
                     <div className="profile-info-mobile-container">
                         <i className="fas fa-mobile-alt" />
@@ -22,8 +24,8 @@ function About() {
                     <div className="profile-info-github-container">
                         <i className="fab fa-github" />
                         <nav className="profile-github-title">Github</nav>
-                        <a href="https://github.com/jamiep9rk" target="_blank">
-                            <button className="github-link-button">이동하기</button>
+                        <a className="profile-github-link" href="https://github.com/jamiep9rk" target="_blank">
+                            <div className="profile-github-text">https://github.com/jamiep9rk</div>
                         </a>
                     </div>
                 </nav>

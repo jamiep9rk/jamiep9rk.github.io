@@ -83,38 +83,6 @@
     margin-right: 50px;
 }
 
-.github-link-button {
-    width: 140px;
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #548cff;
-    border: 2px solid white;
-    border-radius: 15px;
-    transition: 300ms ease-in-out;
-
-    &:hover {
-        box-shadow: gray 5px 5px 5px;
-    }
-
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        transition: ease all;
-    }
-    &:hover:before,
-    &:hover:after {
-        width: 100%;
-        transition: ease all;
-    }
-
-    &:active {
-        box-shadow: none;
-    }
-}
-
 .profile-github-text {
 }
 
