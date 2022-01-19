@@ -5,30 +5,32 @@ function About() {
     return (
         <section className="about-container">
             <nav className="myinfo-container">
-                <nav className="myinfo-text-container">
+                <div className="myinfo-profile-container">
                     <img className="myinfo-profile-image" src={myinfoProfile} alt="" />
-                    <div className="profile-name">박정현 (PARK Jeong Hyun)</div>
-                    <hr className="profile-bar" />
-                    <div className="profile-info-email-container">
-                        <i className="far fa-envelope" />
-                        <nav className="profile-email-title">E-mail</nav>
-                        <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
-                            <nav className="profile-email-text">jamiecareer96@gmail.com</nav>
-                        </a>
-                    </div>
-                    <div className="profile-info-mobile-container">
-                        <i className="fas fa-mobile-alt" />
-                        <nav className="profile-mobile-title">Mobile</nav>
-                        <nav className="profile-mobile-text">010-6301-7841</nav>
-                    </div>
-                    <div className="profile-info-github-container">
-                        <i className="fab fa-github" />
-                        <nav className="profile-github-title">Github</nav>
-                        <a className="profile-github-link" href="https://github.com/jamiep9rk" target="_blank">
-                            <div className="profile-github-text">https://github.com/jamiep9rk</div>
-                        </a>
-                    </div>
-                </nav>
+                    <nav className="myinfo-text-container">
+                        <div className="profile-name">박정현 (PARK Jeong Hyun)</div>
+                        <hr className="profile-bar" />
+                        <div className="profile-info-email-container">
+                            <i className="far fa-envelope" />
+                            <nav className="profile-email-title">E-mail</nav>
+                            <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
+                                <nav className="profile-email-text">jamiecareer96@gmail.com</nav>
+                            </a>
+                        </div>
+                        <div className="profile-info-mobile-container">
+                            <i className="fas fa-mobile-alt" />
+                            <nav className="profile-mobile-title">Mobile</nav>
+                            <nav className="profile-mobile-text">010-6301-7841</nav>
+                        </div>
+                        <div className="profile-info-github-container">
+                            <i className="fab fa-github" />
+                            <nav className="profile-github-title">Github</nav>
+                            <a className="profile-github-link" href="https://github.com/jamiep9rk" target="_blank">
+                                <div className="profile-github-text">https://github.com/jamiep9rk</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
                 <div className="about-divide-bar" />
                 <nav className="myinfo-description-container">
                     <div className="my-desciption">
