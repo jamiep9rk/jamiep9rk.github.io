@@ -21,7 +21,7 @@ function Mealtomeal() {
         slidesToScroll: 1,
     };
     return (
-        <div className="projects-container">
+        <section className="projects-container">
             <nav className="projects-title">Projects</nav>
             <hr className="projects-bar" />
             <nav className="project-white-container">
@@ -77,7 +77,7 @@ function Mealtomeal() {
                     </div>
                 </nav>
             </nav>
-        </div>
+        </section>
     );
 }
 

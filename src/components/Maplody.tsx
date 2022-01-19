@@ -19,7 +19,7 @@ function Maplody() {
         slidesToScroll: 1,
     };
     return (
-        <div className="projects-container">
+        <section className="projects-container">
             <nav className="project-white-container">
                 <div className="project-name">Maplody</div>
                 <div className="project-team">Front-end 2명 / Back-end 2명</div>
@@ -67,7 +67,7 @@ function Maplody() {
                     </div>
                 </nav>
             </nav>
-        </div>
+        </section>
     );
 }
 

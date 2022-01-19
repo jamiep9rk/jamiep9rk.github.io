@@ -11,3 +11,13 @@
 header {
 }
 //#BAE9FA
+
+body {
+    word-break: keep-all;
+}
+
+section {
+    padding: 8vh 0vw;
+    min-height: 80vh;
+    min-width: fit-content;
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
     return (
-        <div className="contact-container">
+        <section className="contact-container">
             {/* <nav className="contact-title">CONTACT</nav>
             <div className="contact-navigation-container">
                 <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
@@ -16,7 +16,7 @@ function Contact() {
                     이력서 보러가기
                 </a>
             </div> */}
-        </div>
+        </section>
     );
 }
 

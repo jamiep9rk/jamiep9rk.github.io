@@ -17,7 +17,7 @@ import github from "../img/skills/github-icon.png";
 
 function Skills() {
     return (
-        <div className="skills-container">
+        <section className="skills-container">
             <nav className="skills-title">Skills</nav>
             <hr className="skills-bar" />
             <nav className="skills-type-container">
@@ -115,7 +115,7 @@ function Skills() {
                     </div>
                 </nav>
             </nav>
-        </div>
+        </section>
     );
 }
 

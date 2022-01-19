@@ -3,7 +3,7 @@ import myinfoProfile from "../img/myinfoProfile.png";
 
 function About() {
     return (
-        <div className="about-container">
+        <section className="about-container">
             <nav className="myinfo-container">
                 <nav className="myinfo-text-container">
                     <img className="myinfo-profile-image" src={myinfoProfile} alt="" />
@@ -54,7 +54,7 @@ function About() {
                     </nav>
                 </nav>
             </nav>
-        </div>
+        </section>
     );
 }
 

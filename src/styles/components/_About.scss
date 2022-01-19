@@ -1,7 +1,6 @@
 .about-container {
     background-color: #369acb;
-    padding: 60px;
-    height: 880px;
+    height: 900px;
     font-size: 28px;
     color: white;
 }
@@ -144,4 +143,10 @@
     &:active {
         box-shadow: none;
     }
+}
+
+@include mobile {
+}
+
+@include tablet {
 }

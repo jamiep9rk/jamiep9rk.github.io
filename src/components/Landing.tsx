@@ -3,7 +3,7 @@ import profileImg from "../img/profile.jpg";
 
 function Landing() {
     return (
-        <div className="landing-container">
+        <section className="landing-container">
             <nav className="welcome-container">
                 <img className="profile-image" src={profileImg} alt="" />
                 <div className="welcome-text-container">
@@ -17,7 +17,7 @@ function Landing() {
                 </div>
                 <span className="main-scroll-icon-text">Scroll</span>
             </nav>
-        </div>
+        </section>
     );
 }
 
