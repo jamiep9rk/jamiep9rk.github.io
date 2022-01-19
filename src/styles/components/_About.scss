@@ -24,6 +24,7 @@
     border-radius: 15px;
     border: 2px solid white;
     margin-bottom: 20px;
+    box-shadow: gray 5px 5px 5px;
 }
 
 .profile-name {
@@ -50,11 +51,14 @@
 }
 
 .profile-email-text {
+    &:hover {
+        color: #dfd3c3;
+    }
 }
 
 .profile-info-mobile-container {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .fa-mobile-alt {
@@ -84,6 +88,9 @@
 }
 
 .profile-github-text {
+    &:hover {
+        color: #dfd3c3;
+    }
 }
 
 .about-divide-bar {
