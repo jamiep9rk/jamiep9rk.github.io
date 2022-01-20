@@ -13,7 +13,7 @@ function About() {
                         <div className="profile-info-email-container">
                             <i className="far fa-envelope" />
                             <nav className="profile-email-title">E-mail</nav>
-                            <a className="navigation-email" href="mailto:jamiecareer96@gmail.com">
+                            <a className="profile-email-link" href="mailto:jamiecareer96@gmail.com">
                                 <nav className="profile-email-text">jamiecareer96@gmail.com</nav>
                             </a>
                         </div>

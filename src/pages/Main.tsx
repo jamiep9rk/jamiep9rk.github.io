@@ -4,7 +4,6 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Mealtomeal from "../components/Mealtomeal";
 import Maplody from "../components/Maplody";
-import Contact from "../components/Contact";
 
 function Main() {
     return (
@@ -14,7 +13,6 @@ function Main() {
             <Skills />
             <Mealtomeal />
             <Maplody />
-            <Contact />
         </div>
     );
 }
