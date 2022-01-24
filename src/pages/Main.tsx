@@ -7,13 +7,13 @@ import Maplody from "../components/Maplody";
 
 function Main() {
     return (
-        <div className="main">
+        <main className="main">
             <Landing />
             <About />
             <Skills />
             <Mealtomeal />
             <Maplody />
-        </div>
+        </main>
     );
 }
 

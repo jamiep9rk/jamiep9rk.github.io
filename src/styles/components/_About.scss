@@ -2,19 +2,16 @@
     background-color: #369acb;
     font-size: 28px;
     color: white;
-}
-
-.myinfo-container {
     display: flex;
+    height: 950px;
     padding: 20px;
     font-size: 28px;
-    margin-top: 50px;
-    margin-bottom: 90px;
 }
 
 .myinfo-profile-container {
     width: 35%;
     margin-left: 100px;
+    margin-top: 100px;
 }
 
 .myinfo-text-container {
@@ -112,10 +109,11 @@
     border: 0.1px solid white;
     height: 780px;
     margin-left: 130px;
+    margin-top: 100px;
 }
 
 .myinfo-description-container {
-    margin-top: 80px;
+    margin-top: 180px;
     margin-left: 250px;
     font-size: 25px;
     line-height: 50px;
@@ -161,7 +159,7 @@
 }
 
 @include mobile {
-    .myinfo-container {
+    .about-container {
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -279,11 +277,10 @@
 }
 
 @include tablet {
-    .myinfo-container {
+    .about-container {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        // width: 100%;
         font-size: 28px;
         margin-top: 50px;
         margin-left: 0px;

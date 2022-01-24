@@ -1,5 +1,4 @@
 import React from "react";
-import mealtomeal from "../img/meal-to-meal-landing.png";
 import homeIcon from "../img/skills/home-icon.png";
 import githubIcon from "../img/skills/github-icon.png";
 import diaryIcon from "../img/skills/diary-icon.png";
@@ -24,11 +23,11 @@ function Mealtomeal() {
         <section className="projects-container">
             <nav className="projects-title">Projects</nav>
             <hr className="projects-bar" />
-            <nav className="project-white-container">
+            <div className="project-white-container">
                 <div className="project-name">Meal-To-Meal</div>
                 <div className="project-team">Front-end 2명 / Back-end 2명</div>
                 <div className="projects-term">2021.11 - 2021.12 (4주)</div>
-                <nav className="project-info-container">
+                <div className="project-info-container">
                     <div className="page-carousel">
                         <Slider {...settings}>
                             <img className="project-landing-image" src={login} alt="" />
@@ -52,15 +51,15 @@ function Mealtomeal() {
                         <li className="details-sentence">Google Maps API를 이용한 지도 및 인포 윈도우, 검색창 구현</li>
                         <li className="details-sentence">S3를 활용한 이미지 업로드 구현</li>
                         <li className="details-sentence">카카오 로그인 API를 이용한 토큰 기반 소셜 로그인 구현</li>
-                        <nav className="project-stack-container">
+                        <div className="project-stack-container">
                             <div className="stack-box">#React S3</div>
                             <div className="stack-box">#Sass</div>
                             <div className="stack-box">#Javascript</div>
                             <div className="stack-box">#React</div>
                             <div className="stack-box">#Kakao Login API</div>
                             <div className="stack-box">#Google Maps API</div>
-                        </nav>
-                        <nav className="project-link-container">
+                        </div>
+                        <div className="project-link-container">
                             <a className="project-link" href="https://www.mealtomeal.shop/" target="_blank">
                                 <img className="project-home-icon" src={homeIcon} alt="홈페이지 바로가기" />
                                 <div className="project-link-text">홈페이지</div>
@@ -73,10 +72,10 @@ function Mealtomeal() {
                                 <img className="project-retrospect-icon" src={diaryIcon} alt="회고 바로가기" />
                                 <div className="project-link-text">작업 회고일지</div>
                             </a>
-                        </nav>
+                        </div>
                     </div>
-                </nav>
-            </nav>
+                </div>
+            </div>
         </section>
     );
 }

@@ -7,20 +7,17 @@ function Header() {
             <Link className="header-landing-link" to="landing-container" spy={true} smooth={true}>
                 <nav className="home-button">@jamiep9rk</nav>
             </Link>
-            <div className="home-navigation-container">
+            <nav className="home-navigation-container">
                 <Link className="header-about-link" to="about-container" spy={true} smooth={true}>
-                    <nav className="navigation-about">ABOUT</nav>
+                    <div className="navigation-about">ABOUT</div>
                 </Link>
                 <Link className="header-skills-link" to="skills-container" spy={true} smooth={true}>
-                    <nav className="navigation-skills">SKILLS</nav>
+                    <div className="navigation-skills">SKILLS</div>
                 </Link>
                 <Link className="header-projects-link" to="projects-container" spy={true} smooth={true}>
-                    <nav className="navigation-projects">PROJECTS</nav>
+                    <div className="navigation-projects">PROJECTS</div>
                 </Link>
-                {/* <Link to="contact-container" spy={true} smooth={true}>
-                    <nav className="navigation-contact">CONTACT</nav>
-                </Link> */}
-            </div>
+            </nav>
         </header>
     );
 }
