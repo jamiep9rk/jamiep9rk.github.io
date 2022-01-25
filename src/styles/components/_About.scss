@@ -9,7 +9,6 @@
 }
 
 .myinfo-profile-container {
-    width: 35%;
     margin-left: 100px;
     margin-top: 100px;
 }
@@ -162,19 +161,20 @@
     .about-container {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        align-items: center;
+        height: 1100px;
         padding: 20px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-top: 0px;
-        margin-left: -30px;
-        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-bottom: 0px;
     }
 
     .myinfo-profile-image {
         width: 150px;
         border-radius: 15px;
         border: 2px solid white;
-        margin-right: 60px;
+        margin-right: 0px;
         margin-bottom: 20px;
         box-shadow: gray 5px 5px 5px;
     }
@@ -185,14 +185,14 @@
     }
 
     .profile-bar {
-        width: 80vw;
+        width: 97%;
         margin: 0px;
         margin-bottom: 50px;
     }
 
     .myinfo-profile-container {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
     .profile-info-email-container {
@@ -220,9 +220,9 @@
 
     .about-divide-bar {
         border: 0.1px solid white;
-        width: 80vw;
+        width: 85%;
         height: 0.1px;
-        margin-left: 50px;
+        margin-left: 0px;
         margin-top: 30px;
     }
 
@@ -231,7 +231,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: 0px;
         font-size: 14px;
         line-height: 40px;
         background-color: #369acb;
@@ -280,22 +280,22 @@
     .about-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 20px;
+        height: 1000px;
         font-size: 28px;
-        margin-top: 50px;
-        margin-left: 0px;
-        margin-bottom: 10px;
+        margin-top: 70px;
     }
 
     .myinfo-profile-container {
-        margin-top: -20px;
+        margin-top: 50px;
         margin-left: 20px;
         display: flex;
         align-items: center;
     }
 
     .myinfo-profile-image {
-        width: 250px;
+        width: 230px;
         border-radius: 15px;
         border: 2px solid white;
         margin-right: 60px;
@@ -305,9 +305,9 @@
 
     .about-divide-bar {
         border: 0.1px solid white;
-        width: 70vw;
+        width: 80%;
         height: 0.1px;
-        margin-left: 100px;
+        margin-left: 0px;
         margin-top: 30px;
     }
 
@@ -316,7 +316,11 @@
     }
 
     .myinfo-description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 50px;
+        margin-left: 0px;
         font-size: 20px;
         line-height: 40px;
         background-color: #369acb;

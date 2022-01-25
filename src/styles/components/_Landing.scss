@@ -139,7 +139,6 @@
         background-color: #94daff;
         justify-content: center;
         align-items: center;
-        width: 100%;
         color: black;
         margin-top: 60px;
     }
@@ -148,7 +147,8 @@
         width: 200px;
         height: 200px;
         border-radius: 70%;
-        margin-left: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .welcome-text-container {
@@ -159,7 +159,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-top: 30px;
-        margin-left: -40px;
+        margin-left: 0px;
         margin-bottom: 30px;
     }
 
@@ -167,7 +167,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 5rem 5rem 1rem 2.5rem;
+        margin: 5rem 2.5rem 1rem 2.5rem;
     }
 }
 
