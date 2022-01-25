@@ -67,13 +67,13 @@
   cursor: pointer;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .header-container {
     font-size: 15px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 820px) and (max-width: 1123px) {
   .header-container {
     font-size: 23px;
   }
@@ -116,7 +116,7 @@
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -331,7 +331,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .welcome-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -390,7 +390,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 820px) and (max-width: 1123px) {
   .profile-image {
     width: 200px;
     height: 200px;
@@ -566,7 +566,7 @@
           box-shadow: none;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .about-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -694,7 +694,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 820px) and (max-width: 1123px) {
   .about-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -853,7 +853,7 @@
   margin-right: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .skills-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -935,7 +935,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 820px) and (max-width: 1123px) {
   .skills-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1153,7 +1153,7 @@
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .projects-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1271,7 +1271,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 820px) and (max-width: 1123px) {
   .projects-container {
     display: -webkit-box;
     display: -ms-flexbox;
