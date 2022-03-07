@@ -109,10 +109,10 @@ function Skills() {
                         <img className="stack-image" src={typescript} alt="" />
                         <div className="stack-text">Typescript</div>
                     </div>
-                    <div className="skills-stack-container">
+                    {/* <div className="skills-stack-container">
                         <img className="stack-image" src={vue} alt="" />
                         <div className="stack-text">Vue</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
