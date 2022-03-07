@@ -28,6 +28,13 @@ function About() {
                             <div className="profile-github-text">https://github.com/jamiep9rk</div>
                         </a>
                     </div>
+                    <div className="profile-info-blog-container">
+                        <i className="fas fa-book" />
+                        <nav className="profile-blog-title">Blog</nav>
+                        <a className="profile-blog-link" href="https://velog.io/@jamiep9rk" target="_blank">
+                            <div className="profile-blog-text">https://velog.io/@jamiep9rk</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="about-divide-bar" />

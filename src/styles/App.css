@@ -414,7 +414,7 @@
   display: flex;
   height: 950px;
   padding: 20px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .myinfo-profile-container {
@@ -439,7 +439,7 @@
 .profile-bar {
   width: 330px;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .profile-info-email-container {
@@ -490,6 +490,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .profile-github-title {
@@ -506,6 +507,32 @@
 }
 
 .profile-github-text:hover {
+  color: #dfd3c3;
+}
+
+.profile-info-blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-blog-title {
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.profile-blog-link {
+  color: white;
+}
+
+.profile-blog-link a {
+  visited: white;
+}
+
+.profile-blog-text:hover {
   color: #dfd3c3;
 }
 
@@ -626,6 +653,13 @@
     margin-right: 48px;
   }
   .profile-info-github-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .profile-info-blog-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
