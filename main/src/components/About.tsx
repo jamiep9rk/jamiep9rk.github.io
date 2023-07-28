@@ -1,6 +1,7 @@
 import React from "react";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import profile from "./common/icons/icon/profile.jpg";
 
 type InfoType = {
   icon: string;
@@ -23,7 +24,7 @@ const infoArr = [
   {
     icon: "fas fa-book",
     label: "Education",
-    value: "리츠메이칸 대학교 국제관계학부",
+    value: "리츠메이칸 대학교 국제관계학부 (2019년 졸업)",
   },
 ];
 
@@ -32,18 +33,10 @@ function About() {
     <article className="" css={maincontainer}>
       <h2 className="text-[45px] font-[700] mb-[20px]">ABOUT ME</h2>
       <div className="w-[100%] flex items-center">
-        <section
-          className="w-[50%] flex justify-center items-center"
-          css={css`
-            border: 1px solid blue;
-          `}
-        >
+        <section className="w-[50%] flex justify-center items-center">
           <img
-            src=""
-            className="w-[300px] h-[300px] rounded-full mb-[50px]"
-            css={css`
-              border: 1px solid #000000;
-            `}
+            src={profile}
+            className="w-[300px] h-[300px] rounded-full mt-[30px] mb-[50px]"
           />
         </section>
         <div
@@ -52,12 +45,7 @@ function About() {
             background: #eaeaea;
           `}
         />
-        <section
-          className="w-[50%]"
-          css={css`
-            border: 1px solid orange;
-          `}
-        >
+        <section className="w-[50%]">
           <div className="grid grid-rows-3 gap-[10px] text-[20px]">
             {infoArr.map((el: InfoType, i) => (
               <div className="flex items-center" key={i}>

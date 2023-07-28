@@ -9,7 +9,7 @@ function Header() {
       <div></div>
       <div className="grid grid-cols-3 gap-[10px] text-center">
         <p>ABOUT</p>
-        <p>CAREER</p>
+        <p>PROJECTS</p>
         <p>SKILLS</p>
       </div>
       {/* <Link

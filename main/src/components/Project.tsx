@@ -2,15 +2,15 @@ import React from "react";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-import Wevent from "src/components/career/Wevent";
-import Dmade from "src/components/career/Dmade";
-import Dokdo from "src/components/career/Dokdo";
+import Wevent from "src/components/project/Wevent";
+import Dmade from "src/components/project/Dmade";
+import Dokdo from "src/components/project/Dokdo";
 
-export default function Career() {
+export default function Project() {
   return (
     <article css={maincontainer}>
-      <h2 className="text-[45px] text-[#fff] font-[700] mb-[20px]">CAREER</h2>
-      <div className="w-[100%] grid gap-[30px]">
+      <h2 className="text-[45px] text-[#fff] font-[700] mb-[20px]">PROJECT</h2>
+      <div className="w-[100%] grid gap-[70px]">
         <Wevent />
         <Dmade />
         <Dokdo />

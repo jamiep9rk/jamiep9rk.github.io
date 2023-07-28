@@ -3,8 +3,9 @@ import { css } from "@emotion/react";
 
 import Landing from "../components/Landing";
 import About from "../components/About";
-import Career from "../components/Career";
-import Skills from "../components/Skills";
+import Project from "../components/Project";
+import SkillCareer from "../components/SkillCareer";
+import Footer from "src/components/Footer";
 // import Mealtomeal from "../components/Mealtomeal";
 // import Maplody from "../components/Maplody";
 
@@ -13,9 +14,10 @@ function Main() {
     <div css={main}>
       <Landing />
       <About />
-      <Career />
-      {/* <Skills />
-      <Mealtomeal />
+      <Project />
+      <SkillCareer />
+      <Footer />
+      {/*<Mealtomeal />
       <Maplody /> */}
     </div>
   );

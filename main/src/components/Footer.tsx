@@ -6,18 +6,7 @@ import { css } from "@emotion/react";
 function Footer() {
   return (
     <footer css={maincontainer}>
-      {/* <nav className="footer-contact-container">
-        <i className="far fa-hand-point-right" />
-        <Link
-          className="footer-contact-link"
-          to="about-container"
-          spy={true}
-          smooth={true}
-        >
-          <div className="footer-contact">Contact</div>
-        </Link>
-      </nav> */}
-      <p className="footer-title">@ 2023 Front-end developer, Jamie Park</p>
+      <p className="footer-title">@2023 Jamie Park. All rights reserved.</p>
     </footer>
   );
 }
@@ -26,8 +15,10 @@ export default Footer;
 
 const maincontainer = css`
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: #919191;
+  background: #222;
+  color: #fff;
   font-size: 17px;
   height: 180px;
 `;
