@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+/*  Do not break Korean words  */
+:lang(ko) {
+  word-break: keep-all;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
