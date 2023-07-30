@@ -21,9 +21,10 @@ const imgArr = [
 export default function Skills() {
   return (
     <article className="w-[100%] flex flex-col items-center">
-      <h2 className="text-[45px] text-[#000] font-[700] mb-[20px]">SKILLS</h2>
+      <h2 className="text-[45px] text-[#000] font-[700] mb-[10px]">SKILLS</h2>
+      <div className="w-[150px] h-[1px] bg-[#000] mb-[40px]" />
       <div
-        className="w-[100%] grid grid-cols-2 gap-[15px] rounded-[10px] p-[25px] bg-[#fff]"
+        className="w-[100%] h-[412px] grid grid-cols-2 gap-[15px] rounded-[10px] p-[25px] bg-[#fff]"
         css={css`
           img {
             height: 100px;

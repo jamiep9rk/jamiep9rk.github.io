@@ -6,7 +6,7 @@ import Career from "./skillcareer/Career";
 
 export default function SkillCareer() {
   return (
-    <article css={maincontainer}>
+    <article className="skill-container" css={maincontainer}>
       <Skills />
       <Career />
     </article>
@@ -20,5 +20,5 @@ const maincontainer = css`
   gap: 30px;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  padding: 60px 100px;
 `;

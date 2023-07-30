@@ -1,16 +1,37 @@
 import React from "react";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Header() {
   return (
     <article css={header}>
       <div></div>
       <div className="grid grid-cols-3 gap-[10px] text-center">
-        <p>ABOUT</p>
-        <p>PROJECTS</p>
-        <p>SKILLS</p>
+        <Link
+          to="about-container"
+          spy={true}
+          smooth={true}
+          className="cursor-pointer"
+        >
+          <p>ABOUT</p>
+        </Link>
+        <Link
+          to="project-container"
+          spy={true}
+          smooth={true}
+          className="cursor-pointer"
+        >
+          <p>PROJECTS</p>
+        </Link>
+        <Link
+          to="skill-container"
+          spy={true}
+          smooth={true}
+          className="cursor-pointer"
+        >
+          <p>SKILLS</p>
+        </Link>
       </div>
       {/* <Link
         className="header-landing-link"

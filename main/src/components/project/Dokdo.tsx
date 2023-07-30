@@ -3,8 +3,9 @@ import React, { useState, useRef } from "react";
 import { css } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
+import check from "../common/icons/icon/check.svg";
 import landing_img from "../common/icons/icon/dokdo_landing_img.png";
 import list_img from "../common/icons/icon/dokdo_list_img.png";
 import edit_img from "../common/icons/icon/dokdo_edit_img.png";
@@ -20,26 +21,16 @@ const imgArr = [
 export default function Dokdo() {
   const swiperRef = useRef<SwiperCore>();
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [currentState, setCurrentState] = useState("");
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide + 1);
-    swiperRef.current?.slideTo(0);
-  };
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide - 1);
-    swiperRef.current?.slideTo(0);
-  };
 
   return (
     <article
-      className="w-[100%] flex flex-col items-center rounded-[10px] p-[25px]"
+      className="w-[100%] flex flex-col items-center rounded-[10px] px-[25px] py-[45px]"
       css={css`
         background: #fff;
       `}
     >
       <section className="flex flex-col items-center mb-[30px]">
-        <h4 className="text-[35px] font-[700] mb-[10px]">DOKDO 백오피스</h4>
+        <h4 className="text-[35px] font-[700] mb-[10px]">DOKDO ADMIN</h4>
         <p className="text-[17px] text-[#9a9a9a]">
           2022.06 - 2022.11 (회사 서비스)
         </p>
@@ -49,18 +40,44 @@ export default function Dokdo() {
           className="w-[50%] h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
-              max-width: 400px !important;
+              max-width: 500px !important;
               overflow: hidden !important;
-            }
-            .swiper-pagination {
-              height: 30px !important;
-              background: #9a9a9a;
             }
             .swiper-wrapper {
               display: flex !important;
             }
             .swiper-slide {
-              width: 400px !important;
+              width: 500px !important;
+            }
+            .swiper-pagination {
+              width: 100% !important;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              background: #fff !important;
+              gap: 5px;
+              border-top: 1px solid #9a9a9a;
+              padding: 5px;
+              span {
+                background: #369acb !important;
+                border-radius: 8px !important;
+              }
+            }
+            .swiper-pagination-bullets {
+              text-align: left;
+              width: fit-content;
+              display: flex;
+            }
+            .swiper-pagination-bullet-active {
+              background-color: #369acb;
+              width: 15px !important;
+              height: 15px !important;
+            }
+            .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+              display: flex;
+              opacity: 1;
+              width: 12px !important;
+              height: 12px !important;
             }
           `}
         >
@@ -68,30 +85,26 @@ export default function Dokdo() {
             type="button"
             onClick={() => {
               swiperRef.current?.slidePrev();
-              // if (currentState === '2023') {
-              //     prevYear();
-              // }
             }}
             className="border-[#c8c8c8] border rounded-full mr-[18px]"
           >
             <img src={chevron_left} className="w-[25px] h-[25px]" />
           </button>
           <Swiper
-            effect={"coverflow"}
+            pagination={{ clickable: true }}
+            navigation
+            modules={[Pagination, Navigation]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
             slidesPerView={1}
-            navigation
-            pagination={true}
-            modules={[Pagination]}
             slidesPerGroup={1}
             onSlideChange={(swiper) => {
               const { isBeginning, isEnd } = swiper;
               let result = "";
               if (isBeginning) result = "start";
               if (isEnd) result = "end";
-              setCurrentState(result);
+              // setCurrentState(result);
             }}
             css={css`
               border: 1px solid #9a9a9a;
@@ -102,25 +115,9 @@ export default function Dokdo() {
               <SwiperSlide key={i} virtualIndex={i}>
                 <div
                   onClick={() => setCurrentSlide(e.id)}
-                  className="w-[460px] h-[480px] flex justify-center items-center"
-                  // css={css`
-                  //   transition: all 0.3s;
-                  //   display: flex;
-                  //   padding-top: 4px;
-                  //   justify-content: center;
-                  //   align-items: center;
-                  //   border: 1px solid var(--gray-200-eaeaea, #eaeaea);
-                  //   background: #fff;
-                  //   cursor: pointer;
-                  //   ${currentSlide === e.id &&
-                  //   css`
-                  //     border: 1px solid var(--gray-200-eaeaea, #eaeaea);
-                  //     background: #2438ef;
-                  //     color: #fff;
-                  //   `}
-                  // `}
+                  className="w-[500px] h-[480px] flex justify-center items-center"
                 >
-                  <img src={e.imgUrl} className="w-[460px] h-[480px]" />
+                  <img src={e.imgUrl} className="w-[500px] h-[480px]" />
                 </div>
               </SwiperSlide>
             ))}
@@ -129,31 +126,46 @@ export default function Dokdo() {
             type="button"
             onClick={() => {
               swiperRef.current?.slideNext();
-              // if (currentState === '2004') {
-              //     nextYear();
-              // }
             }}
             className="border-[#c8c8c8] border rounded-full ml-[18px]"
           >
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div
-          className="w-[50%] flex flex-col items-center p-[20px]"
-          css={css`
-            border: 1px solid red;
-          `}
-        >
-          <div className="">
-            <p className="font-[600]">
+        <div className="w-[50%] flex flex-col p-[50px]">
+          <div
+            css={css`
+              li {
+                line-height: 150%;
+                margin-bottom: 10px;
+              }
+            `}
+          >
+            <p className="text-[17px] font-[600] mb-[20px]">
               동북아역사재단 독도체험관 웹페이지 백오피스입니다.
+            </p>
+            <p className="text-justify leading-normal mb-[25px]">
+              2022년 10월 독도체험관이 이전함에 따라 노후화된 웹페이지를
+              <br />
+              새롭게 React로 리뉴얼한 프로젝트입니다.
+              <br />
+              실제 유저가 사용하는 데이터를 관리자가 쉽게 볼 수 있도록 <br />
+              데이터를 처리하는 부분에 노력을 들였습니다.
             </p>
             <li>독도 체험관 관리자 웹페이지 게시판 CRUD 기능 구현</li>
           </div>
-          <div className="w-[80%] h-[1px] bg-[#9a9a9a] my-[20px]" />
-          <div>
-            {/* <Icons icon="check_icon" /> */}
-            <p>URL</p>
+          <div className="w-[90%] h-[1px] bg-[#9a9a9a] my-[20px]" />
+          <div className="w-[100%] flex flex-col items-start">
+            <div className="flex items-center mb-[15px]">
+              <img src={check} className="w-[20px] h-[20px] mr-[5px]" />
+              <p className="w-[110px] font-[700]">Frontend</p>
+              <p>React, Typescript, styled-component, Recoil</p>
+            </div>
+            <div className="flex items-center">
+              <img src={check} className="w-[20px] h-[20px] mr-[5px]" />
+              <p className="w-[110px] font-[700]">Deployment</p>
+              <p>KT cloud</p>
+            </div>
           </div>
         </div>
       </section>

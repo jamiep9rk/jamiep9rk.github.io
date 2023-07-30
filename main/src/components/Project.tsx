@@ -8,8 +8,9 @@ import Dokdo from "src/components/project/Dokdo";
 
 export default function Project() {
   return (
-    <article css={maincontainer}>
-      <h2 className="text-[45px] text-[#fff] font-[700] mb-[20px]">PROJECT</h2>
+    <article className="project-container" css={maincontainer}>
+      <h2 className="text-[45px] text-[#fff] font-[700] mb-[10px]">PROJECT</h2>
+      <div className="w-[200px] h-[1px] bg-[#fff] mb-[40px]" />
       <div className="w-[100%] grid gap-[70px]">
         <Wevent />
         <Dmade />
@@ -26,5 +27,5 @@ const maincontainer = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  padding: 60px 100px;
 `;
