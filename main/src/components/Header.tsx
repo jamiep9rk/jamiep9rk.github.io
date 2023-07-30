@@ -4,69 +4,26 @@ import { css } from "@emotion/react";
 import { Link } from "react-scroll";
 
 function Header() {
+  const headerArr = [
+    { to: "about-container", title: "ABOUT" },
+    { to: "project-container", title: "PROJECTS" },
+    { to: "skill-container", title: "SKILLS" },
+  ];
   return (
     <article css={header}>
-      <div></div>
       <div className="grid grid-cols-3 gap-[10px] text-center">
-        <Link
-          to="about-container"
-          spy={true}
-          smooth={true}
-          className="cursor-pointer"
-        >
-          <p>ABOUT</p>
-        </Link>
-        <Link
-          to="project-container"
-          spy={true}
-          smooth={true}
-          className="cursor-pointer"
-        >
-          <p>PROJECTS</p>
-        </Link>
-        <Link
-          to="skill-container"
-          spy={true}
-          smooth={true}
-          className="cursor-pointer"
-        >
-          <p>SKILLS</p>
-        </Link>
+        {headerArr.map((el: { to: string; title: string }, i) => (
+          <Link
+            to={el.to}
+            key={i}
+            spy={true}
+            smooth={true}
+            className="cursor-pointer"
+          >
+            <p className="text-[22px]">{el.title}</p>
+          </Link>
+        ))}
       </div>
-      {/* <Link
-        className="header-landing-link"
-        to="landing-container"
-        spy={true}
-        smooth={true}
-      >
-        <nav className="home-button">@jamiep9rk</nav>
-      </Link>
-      <nav className="home-navigation-container">
-        <Link
-          className="header-about-link"
-          to="about-container"
-          spy={true}
-          smooth={true}
-        >
-          <div className="navigation-about">ABOUT</div>
-        </Link>
-        <Link
-          className="header-skills-link"
-          to="skills-container"
-          spy={true}
-          smooth={true}
-        >
-          <div className="navigation-skills">SKILLS</div>
-        </Link>
-        <Link
-          className="header-projects-link"
-          to="projects-container"
-          spy={true}
-          smooth={true}
-        >
-          <div className="navigation-projects">PROJECTS</div>
-        </Link>
-      </nav> */}
     </article>
   );
 }
@@ -75,7 +32,7 @@ export default Header;
 
 const header = css`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 70px;
   position: sticky;
@@ -85,23 +42,5 @@ const header = css`
   font-weight: bold;
   z-index: 999;
   border-bottom: 5px solid #369acb;
+  padding: 0 50px;
 `;
-
-// display: -webkit-box;
-// display: -ms-flexbox;
-// display: flex;
-// -webkit-box-pack: justify;
-// -ms-flex-pack: justify;
-// justify-content: space-between;
-// -webkit-box-align: center;
-// -ms-flex-align: center;
-// align-items: center;
-// height: 70px;
-// position: -webkit-sticky;
-// position: sticky;
-// top: 0;
-// background-color: white;
-// font-size: 28px;
-// font-weight: bold;
-// z-index: 999;
-// border-bottom: 5px solid #369acb;

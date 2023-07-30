@@ -20,5 +20,5 @@ const maincontainer = css`
   gap: 30px;
   justify-content: center;
   align-items: center;
-  padding: 60px 100px;
+  padding: 70px 100px 80px 100px;
 `;
