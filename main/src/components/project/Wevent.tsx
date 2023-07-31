@@ -173,7 +173,7 @@ export default function Wevent() {
             <div className="flex items-center mb-[15px]">
               <img src={check} className="w-[20px] h-[20px] mr-[5px]" />
               <p className="w-[110px] font-[700]">Frontend</p>
-              <p>React, Next, Typescript, Vite, emotion</p>
+              <p>React, Next, Typescript, Vite, emotion, Storybook</p>
             </div>
             <div className="flex items-center">
               <img src={check} className="w-[20px] h-[20px] mr-[5px]" />

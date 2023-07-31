@@ -161,7 +161,7 @@ export default function Dokdo() {
             <div className="flex items-center mb-[15px]">
               <img src={check} className="w-[20px] h-[20px] mr-[5px]" />
               <p className="w-[110px] font-[700]">Frontend</p>
-              <p>React, Typescript, styled-component, Recoil</p>
+              <p>React, Typescript, Recoil</p>
             </div>
             <div className="flex items-center">
               <img src={check} className="w-[20px] h-[20px] mr-[5px]" />
