@@ -37,17 +37,17 @@ export default function Dokdo() {
       </section>
       <section className="w-[100%] flex">
         <div
-          className="w-[50%] h-[550px] flex justify-center items-center"
+          className="w-[60%] h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
-              max-width: 500px !important;
+              max-width: 600px !important;
               overflow: hidden !important;
             }
             .swiper-wrapper {
               display: flex !important;
             }
             .swiper-slide {
-              width: 500px !important;
+              width: 600px !important;
             }
             .swiper-pagination {
               width: 100% !important;
@@ -67,6 +67,9 @@ export default function Dokdo() {
               text-align: left;
               width: fit-content;
               display: flex;
+            }
+            .swiper-pagination-bullet {
+              cursor: pointer;
             }
             .swiper-pagination-bullet-active {
               background-color: #369acb;
@@ -115,9 +118,9 @@ export default function Dokdo() {
               <SwiperSlide key={i} virtualIndex={i}>
                 <div
                   onClick={() => setCurrentSlide(e.id)}
-                  className="w-[500px] h-[480px] flex justify-center items-center"
+                  className="w-[600px] h-[480px] flex justify-center items-center"
                 >
-                  <img src={e.imgUrl} className="w-[500px] h-[480px]" />
+                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
                 </div>
               </SwiperSlide>
             ))}
@@ -132,7 +135,7 @@ export default function Dokdo() {
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div className="w-[50%] flex flex-col p-[50px]">
+        <div className="w-[40%] flex flex-col p-[50px]">
           <div
             css={css`
               li {
@@ -142,17 +145,16 @@ export default function Dokdo() {
             `}
           >
             <p className="text-[17px] font-[600] mb-[20px]">
-              동북아역사재단 독도체험관 웹페이지 백오피스입니다.
+              동북아역사재단 독도체험관 웹페이지 백오피스
             </p>
             <p className="text-justify leading-normal mb-[25px]">
-              2022년 10월 독도체험관이 이전함에 따라 노후화된 웹페이지를
-              <br />
-              새롭게 React로 리뉴얼한 프로젝트입니다.
-              <br />
-              실제 유저가 사용하는 데이터를 관리자가 쉽게 볼 수 있도록 <br />
-              데이터를 처리하는 부분에 노력을 들였습니다.
+              2022년 10월 독도체험관이 이전함에 따라 노후화된 웹페이지를 새롭게
+              React로 리뉴얼한 프로젝트입니다. CMS에서 엑셀 파일을 위해 필요한
+              데이터를 추출하고 테이블화를 통해 데이터를 시각화하여 UX를
+              개선했습니다.
             </p>
             <li>독도 체험관 관리자 웹페이지 게시판 CRUD 기능 구현</li>
+            <li>엑셀 파일 다운로드 기능을 위한 데이터 추출 및 커스터마이징 </li>
           </div>
           <div className="w-[90%] h-[1px] bg-[#9a9a9a] my-[20px]" />
           <div className="w-[100%] flex flex-col items-start">

@@ -41,17 +41,17 @@ export default function Dmade() {
       </section>
       <section className="w-[100%] flex">
         <div
-          className="w-[50%] h-[550px] flex justify-center items-center"
+          className="w-[60%] h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
-              max-width: 500px !important;
+              max-width: 600px !important;
               overflow: hidden !important;
             }
             .swiper-wrapper {
               display: flex !important;
             }
             .swiper-slide {
-              width: 500px !important;
+              width: 600px !important;
             }
             .swiper-pagination {
               width: 100% !important;
@@ -71,6 +71,9 @@ export default function Dmade() {
               text-align: left;
               width: fit-content;
               display: flex;
+            }
+            .swiper-pagination-bullet {
+              cursor: pointer;
             }
             .swiper-pagination-bullet-active {
               background-color: #369acb;
@@ -118,9 +121,9 @@ export default function Dmade() {
               <SwiperSlide key={i} virtualIndex={i}>
                 <div
                   onClick={() => setCurrentSlide(e.id)}
-                  className="w-[500px] h-[480px] flex justify-center items-center"
+                  className="w-[600px] h-[480px] flex justify-center items-center"
                 >
-                  <img src={e.imgUrl} className="w-[495px] h-[480px]" />
+                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
                 </div>
               </SwiperSlide>
             ))}
@@ -135,7 +138,7 @@ export default function Dmade() {
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div className="w-[50%] flex flex-col p-[50px]">
+        <div className="w-[40%] flex flex-col p-[50px]">
           <div
             css={css`
               li {
@@ -145,15 +148,13 @@ export default function Dmade() {
             `}
           >
             <p className="text-[17px] font-[600] mb-[20px]">
-              온라인 고객을 모집할 수 있는 웹포스터 제작 및 통계관리
-              플랫폼입니다.
+              온라인 고객을 모집할 수 있는 웹포스터 제작 및 통계관리 플랫폼
             </p>
             <p className="text-justify mb-[25px]">
-              고객이 웹포스터를 통해 얻은 데이터를 볼 수 있는 기능이 중요한
-              기능이어서
-              <br /> 간편하게 분석할 수 있도록 그래프와 테이블로 구현하는데에
-              <br />
-              많은 시간을 들였습니다.
+              고객이 웹포스터를 통해 얻은 데이터를 볼 수 있는 마이페이지를
+              구현했습니다. 사용자가 필요한 실시간 데이터를 추출하여 Chart.js를
+              이용해 시각화를 향상시키고 사용자가 모니터링 하기 쉽도록
+              커스터마이징하였습니다.
             </p>
             <li>로그인, 회원가입 기능 구현</li>
             <li>마이페이지 웹페이지 리스트 출력, CRUD 기능 구현</li>

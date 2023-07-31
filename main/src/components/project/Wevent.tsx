@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import check from "../common/icons/icon/check.svg";
 import landing_img from "../common/icons/icon/wevent_landing_img.png";
 import edm_img from "../common/icons/icon/wevent_edm_img.png";
-import edm_address from "../common/icons/icon/wevent_address.png";
+import edm_address from "../common/icons/icon/wevent_address_img.png";
 import setting_img from "../common/icons/icon/wevent_setting_img.png";
 import chevron_left from "../common/icons/icon/chevron_left.svg";
 import chevron_right from "../common/icons/icon/chevron_right.svg";
@@ -34,17 +34,17 @@ export default function Wevent() {
       </section>
       <section className="w-[100%] flex">
         <div
-          className="w-[50%] h-[550px] flex justify-center items-center"
+          className="w-[60%] h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
-              max-width: 500px !important;
+              max-width: 600px !important;
               overflow: hidden !important;
             }
             .swiper-wrapper {
               display: flex !important;
             }
             .swiper-slide {
-              width: 500px !important;
+              width: 600px !important;
             }
             .swiper-pagination {
               width: 100% !important;
@@ -64,6 +64,9 @@ export default function Wevent() {
               text-align: left;
               width: fit-content;
               display: flex;
+            }
+            .swiper-pagination-bullet {
+              cursor: pointer;
             }
             .swiper-pagination-bullet-active {
               background-color: #369acb;
@@ -111,9 +114,9 @@ export default function Wevent() {
               <SwiperSlide key={i} virtualIndex={i}>
                 <div
                   onClick={() => setCurrentSlide(e.id)}
-                  className="w-[500px] h-[480px] flex justify-center items-center"
+                  className="w-[600px] h-[480px] flex justify-center items-center"
                 >
-                  <img src={e.imgUrl} className="w-[495px] h-[480px]" />
+                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
                 </div>
               </SwiperSlide>
             ))}
@@ -128,7 +131,7 @@ export default function Wevent() {
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div className="w-[50%] flex flex-col p-[40px]">
+        <div className="w-[40%] flex flex-col p-[20px]">
           <div
             css={css`
               li {
@@ -138,17 +141,17 @@ export default function Wevent() {
             `}
           >
             <p className="text-[17px] font-[600] mb-[20px]">
-              웹에서 세미나 및 컨퍼런스를 열수 있는 웨비나 플랫폼입니다.
+              웹에서 세미나 및 컨퍼런스를 열수 있는 웨비나 플랫폼
             </p>
             <p className="text-justify leading-normal mb-[15px]">
               메인 페이지, 유저 페이지, 관리자 페이지, 총 3개의 웹페이지로
-              구성되어 있는 <br />큰 규모의 서비스였고 에디터 라이브러리를
-              사용한 개발에 참여함으로써 <br />
-              UX의 범위 확대를 위해 다양한 시도를 해 볼 수 있는
-              프로젝트였습니다.
+              구성되어 있는 서비스에서 EDM 제작 페이지 부분을 주로 구현했습니다.
+              react-beautiful-dnd와 tinyMCE 에디터를 활용하여 레이아웃, 템플릿
+              구성 등의 다양한 기능을 개발했고 이로 인해 UX의 자율성 범위를
+              확대하였습니다.
             </p>
             <li>EDM 웹 이메일 디자인 제작 페이지 기능 구현</li>
-            <li>백오피스 페이지에서 테마 제작 페이지 기능 구현</li>
+            <li>CMS에서 테마 제작 페이지 기능 구현</li>
             <li>
               react-beautiful-dnd와 unsplash, tinyMCE 에디터를 사용해 사용자
               취향 반영

@@ -23,9 +23,11 @@ function Landing() {
         <p className="text-center text-[#fff] text-[20px] leading-[35px] mb-[30px]">
           안녕하세요
           <br />
-          많은 유저들이 사용하는 서비스를 만들고 싶은 프론트엔드 개발자입니다.
+          많은 유저들이 사용하는 서비스를 개발하고 싶은 2년차 프론트엔드
+          개발자입니다.
           <br />
-          계획하고 도전하는 것이 저의 장점입니다.
+          동료들과의 커뮤니케이션을 통해 업무 효율성을 향상시키는 것이 저의
+          장점입니다.
         </p>
         <Link to="about-container" spy={true} smooth={true}>
           <button
