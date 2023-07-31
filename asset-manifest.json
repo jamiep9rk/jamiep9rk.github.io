@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1e908b99.css",
-    "main.js": "/static/js/main.c51b6c46.js",
+    "main.js": "/static/js/main.cd654222.js",
     "static/media/wevent_landing_img.png": "/static/media/wevent_landing_img.044c89c90461cbbbfeb7.png",
     "static/media/landing_bg.jpg": "/static/media/landing_bg.931d88d0548306a32077.jpg",
     "static/media/dokdo_list_img.png": "/static/media/dokdo_list_img.7c0226f637e814799aa2.png",
@@ -30,10 +30,10 @@
     "index.html": "/index.html",
     "static/media/chevron_left.svg": "/static/media/chevron_left.db4be77a9a6ceaf09731c2f73a97db08.svg",
     "main.1e908b99.css.map": "/static/css/main.1e908b99.css.map",
-    "main.c51b6c46.js.map": "/static/js/main.c51b6c46.js.map"
+    "main.cd654222.js.map": "/static/js/main.cd654222.js.map"
   },
   "entrypoints": [
     "static/css/main.1e908b99.css",
-    "static/js/main.c51b6c46.js"
+    "static/js/main.cd654222.js"
   ]
 }
