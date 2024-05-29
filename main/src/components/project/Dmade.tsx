@@ -24,7 +24,10 @@ const imgArr = [
 
 export default function Dmade() {
   const swiperRef = useRef<SwiperCore>();
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentState, setCurrentState] = useState(0);
+
+  const onPrev = () => swiperRef.current?.slidePrev();
+  const onNext = () => swiperRef.current?.slideNext();
 
   return (
     <article
@@ -34,14 +37,16 @@ export default function Dmade() {
       `}
     >
       <section className="flex flex-col items-center mb-[30px]">
-        <h4 className="text-[35px] font-[700] mb-[10px]">DMADE</h4>
+        <h4 className="text-[35px] font-[700] mb-[10px] tablet:mb-0 mobile:mb-0">
+          DMADE
+        </h4>
         <p className="text-[17px] text-[#9a9a9a]">
-          2022.05 - 2022.11 (회사 서비스)
+          2022.05 - 2022.11 (회사 서비스, 현재는 서비스 종료)
         </p>
       </section>
-      <section className="w-[100%] flex">
+      <section className="w-[100%] flex tablet:flex-col mobile:flex-col">
         <div
-          className="w-[60%] h-[550px] flex justify-center items-center"
+          className="w-[60%] tablet:w-full mobile:w-full h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
               max-width: 600px !important;
@@ -52,39 +57,6 @@ export default function Dmade() {
             }
             .swiper-slide {
               width: 600px !important;
-            }
-            .swiper-pagination {
-              width: 100% !important;
-              display: grid;
-              justify-content: center;
-              align-items: center;
-              background: #fff !important;
-              gap: 5px;
-              border-top: 1px solid #9a9a9a;
-              padding: 5px;
-              span {
-                background: #369acb !important;
-                border-radius: 8px !important;
-              }
-            }
-            .swiper-pagination-bullets {
-              text-align: left;
-              width: fit-content;
-              display: flex;
-            }
-            .swiper-pagination-bullet {
-              cursor: pointer;
-            }
-            .swiper-pagination-bullet-active {
-              background-color: #369acb;
-              width: 15px !important;
-              height: 15px !important;
-            }
-            .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-              display: flex;
-              opacity: 1;
-              width: 12px !important;
-              height: 12px !important;
             }
           `}
         >
@@ -97,37 +69,34 @@ export default function Dmade() {
           >
             <img src={chevron_left} className="w-[25px] h-[25px]" />
           </button>
-          <Swiper
-            pagination={{ clickable: true }}
-            navigation
-            modules={[Pagination, Navigation]}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            slidesPerView={1}
-            slidesPerGroup={1}
-            onSlideChange={(swiper) => {
-              const { isBeginning, isEnd } = swiper;
-              let result = "";
-              if (isBeginning) result = "start";
-              if (isEnd) result = "end";
-            }}
-            css={css`
-              border: 1px solid #9a9a9a;
-              border-radius: 4px;
-            `}
-          >
-            {imgArr?.map((e: { id: number; imgUrl: string }, i) => (
-              <SwiperSlide key={i} virtualIndex={i}>
-                <div
-                  onClick={() => setCurrentSlide(e.id)}
-                  className="w-[600px] h-[480px] flex justify-center items-center"
-                >
-                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="border-[1px] border-[#eaeaea] rounded-[10px]">
+            <Swiper
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              slidesPerView={1}
+              slidesPerGroup={1}
+              pagination={{
+                clickable: true,
+              }}
+              onSlideChange={(swiper) => {
+                const { realIndex } = swiper;
+                setCurrentState(realIndex);
+              }}
+              loop
+            >
+              {imgArr?.map((e: { id: number; imgUrl: string }, i) => (
+                <SwiperSlide key={i} virtualIndex={i}>
+                  <div className="w-[600px] h-[480px] flex justify-center items-center">
+                    <img
+                      src={e.imgUrl}
+                      className="w-[595px] h-[480px] rounded-[10px]"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
           <button
             type="button"
             onClick={() => {
@@ -138,7 +107,7 @@ export default function Dmade() {
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div className="w-[40%] flex flex-col p-[50px]">
+        <div className="w-[40%] tablet:w-full mobile:w-full flex flex-col p-[50px]">
           <div
             css={css`
               li {
@@ -156,11 +125,14 @@ export default function Dmade() {
               이용해 시각화를 향상시키고 사용자가 모니터링 하기 쉽도록
               커스터마이징하였습니다.
             </p>
-            <li>로그인, 회원가입 기능 구현</li>
-            <li>마이페이지 웹페이지 리스트 출력, CRUD 기능 구현</li>
-            <li>Chart.js를 이용해 데이터 시각화 개선하여 유저의 경험 향상</li>
+            <li>
+              Chart.js를 사용해 웹포스터 관련 주요 데이터 분석 및 시각화를
+              개선하여 유저의 경험 향상
+            </li>
+            <li>이메일 및 소셜 로그인 구현을 통해 회원가입 구현</li>
+            <li>유저가 제작한 웹포스터 관리를 위한 마이페이지 구현</li>
           </div>
-          <div className="w-[90%] h-[1px] bg-[#9a9a9a] my-[20px]" />
+          <div className="w-[90%] tablet:w-full mobile:w-full h-[1px] bg-[#9a9a9a] my-[20px]" />
           <div className="w-[100%] flex flex-col items-start">
             <div className="flex items-center mb-[15px]">
               <img src={check} className="w-[20px] h-[20px] mr-[5px]" />

@@ -7,7 +7,8 @@ function Header() {
   const headerArr = [
     { to: "about-container", title: "ABOUT" },
     { to: "project-container", title: "PROJECTS" },
-    { to: "skill-container", title: "SKILLS" },
+    { to: "career-container", title: "CAREER" },
+    // { to: "skill-container", title: "SKILLS" },
   ];
   return (
     <article css={header}>
@@ -41,6 +42,6 @@ const header = css`
   font-size: 28px;
   font-weight: bold;
   z-index: 999;
-  border-bottom: 5px solid #369acb;
+  border-bottom: 5px solid #83a2ff;
   padding: 0 50px;
 `;

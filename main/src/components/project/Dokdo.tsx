@@ -20,7 +20,10 @@ const imgArr = [
 
 export default function Dokdo() {
   const swiperRef = useRef<SwiperCore>();
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentState, setCurrentState] = useState(0);
+
+  const onPrev = () => swiperRef.current?.slidePrev();
+  const onNext = () => swiperRef.current?.slideNext();
 
   return (
     <article
@@ -29,15 +32,15 @@ export default function Dokdo() {
         background: #fff;
       `}
     >
-      <section className="flex flex-col items-center mb-[30px]">
+      <section className="flex flex-col items-center mb-[30px] tablet:mb-0 mobile:mb-0">
         <h4 className="text-[35px] font-[700] mb-[10px]">DOKDO ADMIN</h4>
         <p className="text-[17px] text-[#9a9a9a]">
           2022.06 - 2022.11 (회사 서비스)
         </p>
       </section>
-      <section className="w-[100%] flex">
+      <section className="w-[100%] flex tablet:flex-col mobile:flex-col">
         <div
-          className="w-[60%] h-[550px] flex justify-center items-center"
+          className="w-[60%] tablet:w-full mobile:w-full h-[550px] flex justify-center items-center"
           css={css`
             .swiper {
               max-width: 600px !important;
@@ -48,39 +51,6 @@ export default function Dokdo() {
             }
             .swiper-slide {
               width: 600px !important;
-            }
-            .swiper-pagination {
-              width: 100% !important;
-              display: grid;
-              justify-content: center;
-              align-items: center;
-              background: #fff !important;
-              gap: 5px;
-              border-top: 1px solid #9a9a9a;
-              padding: 5px;
-              span {
-                background: #369acb !important;
-                border-radius: 8px !important;
-              }
-            }
-            .swiper-pagination-bullets {
-              text-align: left;
-              width: fit-content;
-              display: flex;
-            }
-            .swiper-pagination-bullet {
-              cursor: pointer;
-            }
-            .swiper-pagination-bullet-active {
-              background-color: #369acb;
-              width: 15px !important;
-              height: 15px !important;
-            }
-            .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-              display: flex;
-              opacity: 1;
-              width: 12px !important;
-              height: 12px !important;
             }
           `}
         >
@@ -93,38 +63,34 @@ export default function Dokdo() {
           >
             <img src={chevron_left} className="w-[25px] h-[25px]" />
           </button>
-          <Swiper
-            pagination={{ clickable: true }}
-            navigation
-            modules={[Pagination, Navigation]}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            slidesPerView={1}
-            slidesPerGroup={1}
-            onSlideChange={(swiper) => {
-              const { isBeginning, isEnd } = swiper;
-              let result = "";
-              if (isBeginning) result = "start";
-              if (isEnd) result = "end";
-              // setCurrentState(result);
-            }}
-            css={css`
-              border: 1px solid #9a9a9a;
-              border-radius: 4px;
-            `}
-          >
-            {imgArr?.map((e: { id: number; imgUrl: string }, i) => (
-              <SwiperSlide key={i} virtualIndex={i}>
-                <div
-                  onClick={() => setCurrentSlide(e.id)}
-                  className="w-[600px] h-[480px] flex justify-center items-center"
-                >
-                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="border-[1px] border-[#eaeaea] rounded-[10px]">
+            <Swiper
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              slidesPerView={1}
+              slidesPerGroup={1}
+              pagination={{
+                clickable: true,
+              }}
+              onSlideChange={(swiper) => {
+                const { realIndex } = swiper;
+                setCurrentState(realIndex);
+              }}
+              loop
+            >
+              {imgArr?.map((e: { id: number; imgUrl: string }, i) => (
+                <SwiperSlide key={i} virtualIndex={i}>
+                  <div className="w-[600px] h-[480px] flex justify-center items-center">
+                    <img
+                      src={e.imgUrl}
+                      className="w-[595px] h-[480px] rounded-[10px]"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
           <button
             type="button"
             onClick={() => {
@@ -135,7 +101,7 @@ export default function Dokdo() {
             <img src={chevron_right} className="w-[25px] h-[25px]" />
           </button>
         </div>
-        <div className="w-[40%] flex flex-col p-[50px]">
+        <div className="w-[40%] tablet:w-full mobile:w-full flex flex-col p-[50px]">
           <div
             css={css`
               li {
@@ -153,8 +119,10 @@ export default function Dokdo() {
               데이터를 추출하고 테이블화를 통해 데이터를 시각화하여 UX를
               개선했습니다.
             </p>
-            <li>독도 체험관 관리자 웹페이지 게시판 CRUD 기능 구현</li>
-            <li>엑셀 파일 다운로드 기능을 위한 데이터 추출 및 커스터마이징 </li>
+            <li>독도 체험관 관리자 웹페이지 게시판 구현 </li>
+            <li>
+              체험 등록한 유저의 정보 분석을 위한 데이터 추출 및 커스터마이징
+            </li>
           </div>
           <div className="w-[90%] h-[1px] bg-[#9a9a9a] my-[20px]" />
           <div className="w-[100%] flex flex-col items-start">

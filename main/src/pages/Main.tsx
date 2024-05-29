@@ -5,7 +5,8 @@ import { Link } from "react-scroll";
 import Landing from "../components/Landing";
 import About from "../components/About";
 import Project from "../components/Project";
-import SkillCareer from "../components/SkillCareer";
+import Skill from "src/components/Skill";
+import Career from "src/components/Career";
 import Footer from "src/components/Footer";
 import top from "../components/common/icons/icon/top.png";
 
@@ -37,7 +38,8 @@ function Main() {
       <Landing />
       <About />
       <Project />
-      <SkillCareer />
+      <Career />
+      {/* <Skill /> */}
       <Footer />
       {topBtn && (
         <Link to="landing-container" spy={true} smooth={true}>

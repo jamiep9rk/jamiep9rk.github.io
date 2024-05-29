@@ -28,8 +28,10 @@ const infoArr = [
   },
   {
     icon: book,
-    label: "Education",
-    value: "리츠메이칸 대학교 국제관계학부 (2019년 졸업)",
+    label: "Blog",
+    value: "https://velog.io/@jamiep9rk/posts",
+    // label: "Education",
+    // value: "리츠메이칸 대학교 국제관계학부 (2019년 졸업)",
   },
   {
     icon: language,
@@ -70,7 +72,7 @@ function About() {
                   `}
                 />
                 <p className="w-[110px] font-[600]">{el.label}</p>
-                {el.label === "Github" ? (
+                {el.label === "Github" || el.label === "Blog" ? (
                   <a
                     href={el.value}
                     target="_blank"
@@ -94,7 +96,7 @@ function About() {
 export default About;
 
 const maincontainer = css`
-  /* background-color: #369acb; */
+  /* background-color: #83A2FF; */
   width: 100%;
   display: flex;
   flex-direction: column;
