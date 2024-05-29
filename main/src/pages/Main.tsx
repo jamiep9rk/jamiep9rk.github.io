@@ -34,7 +34,7 @@ export default function Main() {
   });
 
   return (
-    <div css={main}>
+    <div>
       <Landing />
       <About />
       <Project />
