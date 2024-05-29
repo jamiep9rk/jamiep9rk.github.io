@@ -89,37 +89,6 @@ export default function Kovo() {
               ))}
             </Swiper>
           </div>
-          {/* <Swiper
-            pagination={{ clickable: true }}
-            navigation
-            modules={[Pagination, Navigation]}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            slidesPerView={1}
-            slidesPerGroup={1}
-            onSlideChange={(swiper) => {
-              const { isBeginning, isEnd } = swiper;
-              let result = "";
-              if (isBeginning) result = "start";
-              if (isEnd) result = "end";
-            }}
-            css={css`
-              border: 1px solid #9a9a9a;
-              border-radius: 4px;
-            `}
-          >
-            {imgArr?.map((e: { id: number; imgUrl: string }, i) => (
-              <SwiperSlide key={i} virtualIndex={i}>
-                <div
-                  onClick={() => setCurrentSlide(e.id)}
-                  className="w-[600px] h-[480px] flex justify-center items-center"
-                >
-                  <img src={e.imgUrl} className="w-[595px] h-[480px]" />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
           <button
             type="button"
             onClick={() => {

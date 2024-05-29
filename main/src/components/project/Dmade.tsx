@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import { css } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
-import { Navigation, Pagination } from "swiper/modules";
 
 import check from "../common/icons/icon/check.svg";
 import landing_img from "../common/icons/icon/landing_img.png";
