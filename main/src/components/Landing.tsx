@@ -21,7 +21,9 @@ function Landing() {
           `}
         />
         <p className="text-center text-[#fff] text-[20px] leading-[35px] mb-[30px]">
-          안녕하세요 3년차 프론드엔드 개발자 박정현입니다
+          <span className="text-[23px] font-[600]">
+            안녕하세요 3년차 프론드엔드 개발자 박정현입니다
+          </span>
           <br />
           <br />
           부트캠프를 통해 개발자로 전향했고 그 경험을 바탕으로 <br />

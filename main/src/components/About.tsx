@@ -1,7 +1,7 @@
 import React from "react";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import profile from "./common/icons/icon/profile.jpg";
+import profile from "./common/icons/icon/profile.png";
 import email from "./common/icons/icon/mail.png";
 import phone from "./common/icons/icon/cellphone.png";
 import github from "./common/icons/icon/github.png";
@@ -49,7 +49,7 @@ function About() {
         <section className="w-[50%] flex justify-center items-center">
           <img
             src={profile}
-            className="w-[300px] h-[300px] rounded-full mt-[30px] mb-[50px]"
+            className="w-[250px] h-[300px] rounded-full mt-[30px] mb-[50px]"
           />
         </section>
         <div
