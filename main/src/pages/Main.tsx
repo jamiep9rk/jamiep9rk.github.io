@@ -10,7 +10,7 @@ import Career from "src/components/Career";
 import Footer from "src/components/Footer";
 import top from "../components/common/icons/icon/top.png";
 
-function Main() {
+export default function Main() {
   const [scrollY, setScrollY] = useState(0);
   const [topBtn, setTopBtn] = useState(false);
 
@@ -51,7 +51,3 @@ function Main() {
     </div>
   );
 }
-
-export default Main;
-
-const main = css``;
