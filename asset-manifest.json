@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.efcb12db.css",
-    "main.js": "/static/js/main.97ea172b.js",
+    "main.css": "/static/css/main.c6a85fdf.css",
+    "main.js": "/static/js/main.dd11373b.js",
     "static/media/kovo_landing_img.png": "/static/media/kovo_landing_img.401460a174fd7549bcbb.png",
     "static/media/wevent_landing_img.png": "/static/media/wevent_landing_img.044c89c90461cbbbfeb7.png",
     "static/media/landing_bg.jpg": "/static/media/landing_bg.931d88d0548306a32077.jpg",
@@ -28,11 +28,11 @@
     "static/media/chevron_right.svg": "/static/media/chevron_right.8ce7cbe6a5e2ddc6b6b46878bcbb9e76.svg",
     "index.html": "/index.html",
     "static/media/chevron_left.svg": "/static/media/chevron_left.db4be77a9a6ceaf09731c2f73a97db08.svg",
-    "main.efcb12db.css.map": "/static/css/main.efcb12db.css.map",
-    "main.97ea172b.js.map": "/static/js/main.97ea172b.js.map"
+    "main.c6a85fdf.css.map": "/static/css/main.c6a85fdf.css.map",
+    "main.dd11373b.js.map": "/static/js/main.dd11373b.js.map"
   },
   "entrypoints": [
-    "static/css/main.efcb12db.css",
-    "static/js/main.97ea172b.js"
+    "static/css/main.c6a85fdf.css",
+    "static/js/main.dd11373b.js"
   ]
 }
