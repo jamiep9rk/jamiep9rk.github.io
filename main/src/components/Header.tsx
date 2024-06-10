@@ -1,15 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Link } from "react-scroll";
 
-function Header() {
+export default function Header() {
+  // const navigate = useNavigate();
   const headerArr = [
     { to: "about-container", title: "ABOUT" },
     { to: "project-container", title: "PROJECTS" },
     { to: "career-container", title: "CAREER" },
     // { to: "skill-container", title: "SKILLS" },
   ];
+
   return (
     <article css={header}>
       <div className="grid grid-cols-3 gap-[10px] text-center">
@@ -25,11 +28,13 @@ function Header() {
           </Link>
         ))}
       </div>
+      {/* <div className="w-[1px] h-[20px] bg-[#eaeaea] mr-4" /> */}
+      {/* <div onClick={() => navigate("en")}>
+        <p className="text-[18px] text-[#6a6a6a]">EN</p>
+      </div> */}
     </article>
   );
 }
-
-export default Header;
 
 const header = css`
   display: flex;
